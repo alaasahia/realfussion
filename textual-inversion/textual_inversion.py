@@ -568,7 +568,7 @@ def get_full_repo_name(model_id: str, organization: Optional[str] = None, token:
 def main():
     args = parse_args()
     logging_dir = os.path.join(args.logging_dir)
-		output_dir = os.path.join(args.output_dir)
+	output_dir = os.path.join(args.output_dir)
     accelerator_project_config = ProjectConfiguration(total_limit=args.checkpoints_total_limit)
 
     accelerator = Accelerator(
